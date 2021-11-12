@@ -21,9 +21,12 @@ namespace FieldEngineerApi
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
+                .ConfigureWebHostDefaults(webBuilder => { webBuilder
+                    .ConfigureAppConfiguration((hostingContext, config) => {
+                        config.AddEnvironmentVariables(prefix: "primebird_");
+                    })
+                    .UseUrls("http://*:5000")
+                    .UseStartup<Startup>();
                 });
     }
 }
