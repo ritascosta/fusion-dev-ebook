@@ -25,7 +25,7 @@ namespace FieldEngineerApi
                     .ConfigureAppConfiguration((hostingContext, config) => {
                         config.AddEnvironmentVariables(prefix: "primebird_");
                     })
-                    .UseUrls("http://*:5000")
+                    .UseUrls("http://*:80")
                     .UseStartup<Startup>();
                 });
     }
