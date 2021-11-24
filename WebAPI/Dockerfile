@@ -4,5 +4,3 @@ EXPOSE 80
 COPY bin/Debug/net5.0/publish/ app/
 WORKDIR /app
 ENTRYPOINT dotnet FieldEngineerApi.dll
-
-
