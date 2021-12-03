@@ -7,14 +7,18 @@ You will need the following software on your computer:
 - PowerShell
 - .NET 5.0
 - A Git client
-- Visual Studio Code together with the following extensions:
-    - The C# extension, available at https://aka.ms/AAbvu72.  
-    - The Azure App Service extension, available at https://aka.ms/AAbvgm8. 
-    - The Azure Account extension, available at https://aka.ms/AAbvgm7.  
-    - The The SQL Server extension, available at https://aka.ms/AAbvgm5.  
-
+- Visual Studio Code 
 
 You'll also need an Azure subscription and a PowerApps subscription.
+
+## Step-by-step guide
+
+- Workshop overview
+- Clone the sample code on your local computer
+- Set up an Azure SQL Database server
+- Configure the Web API and deploy it to Azure Container Apps
+- Expose your Web API with Azure API Management
+- Build an interface for your Web API with Power Apps
 
 ## Clone the sample code on your local computer
 
