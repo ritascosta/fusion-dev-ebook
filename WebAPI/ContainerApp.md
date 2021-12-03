@@ -1,9 +1,9 @@
-**Add container image to ACR**
+```**Add container image to ACR**
 $ACR_NAME="aircond"
 az acr login --name $ACR_NAME
 docker tag fieldapi $ACR_NAME/fieldapi:v1
 docker push $ACR_NAME.azurecr.io/fieldapi:v1
-
+```
 **Pre Requisites**
 az extension add --source https://workerappscliextension.blob.core.windows.net/azure-cli-extension/containerapp-0.2 0-py2.py3-none-any.whl
 az provider register --namespace Microsoft.Web
