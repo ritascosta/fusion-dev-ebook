@@ -1,4 +1,4 @@
-# Fusion Development Workshop
+## Fusion Development Workshop
 
 ## Prerequisites
 
