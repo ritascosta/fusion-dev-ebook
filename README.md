@@ -13,7 +13,7 @@ You'll also need an Azure subscription and a PowerApps subscription.
 
 ## Step-by-step guide
 
-- [link](##Clone the sample code on your local computer)
+- [link](#Clone the sample code on your local computer)
 - Workshop overview
 - Clone the sample code on your local computer
 - Set up an Azure SQL Database server
