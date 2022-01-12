@@ -13,15 +13,16 @@ You'll also need an Azure subscription and a PowerApps subscription.
 
 ## Step-by-step guide
 
-- [link](#abcd)
-- Workshop overview
-- Clone the sample code on your local computer
-- Set up an Azure SQL Database server
-- Configure the Web API and deploy it to Azure Container Apps
-- Expose your Web API with Azure API Management
-- Build an interface for your Web API with Power Apps
+- [Workshop overview](#overview)
+- [Clone the sample code on your local computer](#repo)
+- [Set up an Azure SQL Database server](#sql)
+- [Configure the Web API and deploy it to Azure Container Apps](#api)
+- [Expose your Web API with Azure API Management](#apim)
+- [Build an interface for your Web API with Power Apps](#powerapps)
 
-## Clone the sample code on your local computer <a name="abcd"></a>
+## Workshop Overview <a name="overview"></a>
+
+## Clone the sample code on your local computer <a name="repo"></a>
 
 To view and edit the code in this project, use `git` to clone this project on your hard drive:
 
@@ -33,7 +34,7 @@ To view and edit the code in this project, use `git` to clone this project on yo
     cd fusion-dev-ebook
     ```
 
-## Set up an Azure SQL Database server
+## Set up an Azure SQL Database server <a name="sql"></a>
 
 The Web API requires three SQL databases:
 
@@ -71,7 +72,7 @@ You can set up these databases in Azure SQL Database by following these steps:
     sqlcmd -S <yourservername>.database.windows.net -U sqladmin -P Pa55w.rd -d SchedulesDB -i "./SQLScripts/SchedulesDB-setup.sql"
     ```
 
-## Configure the Web API
+## Configure the Web API <a name="api"></a>
 
 You can either follow the steps in the guide to build the Web API, or you can use the completed version provided in this repository. To build and deploy the completed version, perform the following instructions:
 
@@ -85,7 +86,7 @@ You can either follow the steps in the guide to build the Web API, or you can us
 1. Open **appsettings.json**. There are three connections strings in the file. In each connection string, replace **fieldengineersqlserver** with the name of the SQL server you created above. Replace the password in each connection string with **Pa55w.rd**
 1. Open **appsettings.Development.json**. In each connection string, replace **fieldengineersqlserver** with the name of the SQL server you created above, and provide the password **Pa55w.rd**.
 
-### Deploy the Web API in the Azure Container Apps Service
+### Deploy the Web API in the Azure Container Apps Service 
 
 1. In Visual Studio Code, press **CTRL + SHIFT + P**, type **Azure: Sign-In** and then press **Enter**.
 1. In the browser window, sign into Azure with your usual credentials, and then close the browser window.
@@ -95,3 +96,7 @@ You can either follow the steps in the guide to build the Web API, or you can us
 1. Select the **.NET 5** runtime stack and then select the **Free** pricing tier. Azure creates the new Web app.
 1. Right-click the new Web app, and then select **Deploy to Web App**.
 1. In the Visual Studio Code dialog, select **Deploy**. Visual Studio Code deploys the Web API to Azure.
+
+## Expose your Web API through API Management <a name="apim"></a>
+
+## Build an interface for your Web API with Power Apps <a name="powerapps"></a> 
