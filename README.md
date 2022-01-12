@@ -13,7 +13,7 @@ You'll also need an Azure subscription and a PowerApps subscription.
 
 ## Step-by-step guide
 
-- [link](#Clone the sample code on your local computer)
+- [link](#abcd)
 - Workshop overview
 - Clone the sample code on your local computer
 - Set up an Azure SQL Database server
@@ -21,7 +21,7 @@ You'll also need an Azure subscription and a PowerApps subscription.
 - Expose your Web API with Azure API Management
 - Build an interface for your Web API with Power Apps
 
-## Clone the sample code on your local computer
+## Clone the sample code on your local computer <a name="abcd"></a>
 
 To view and edit the code in this project, use `git` to clone this project on your hard drive:
 
