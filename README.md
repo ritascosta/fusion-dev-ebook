@@ -88,15 +88,6 @@ You can either follow the steps in the guide to build the Web API, or you can us
 
 ### Deploy the Web API in the Azure Container Apps Service 
 
-1. In Visual Studio Code, press **CTRL + SHIFT + P**, type **Azure: Sign-In** and then press **Enter**.
-1. In the browser window, sign into Azure with your usual credentials, and then close the browser window.
-1. To open the Azure Tools, in Visual Studio Code press **CTRL + SHIFT + A** and then select the **APP SERVICE** window.
-1. Right-click your subscription, and then select **Create New Web app**.
-1. Enter a name for the Web app and then press **Enter**.
-1. Select the **.NET 5** runtime stack and then select the **Free** pricing tier. Azure creates the new Web app.
-1. Right-click the new Web app, and then select **Deploy to Web App**.
-1. In the Visual Studio Code dialog, select **Deploy**. Visual Studio Code deploys the Web API to Azure.
-
 ## Expose your Web API through API Management <a name="apim"></a>
 
 ## Build an interface for your Web API with Power Apps <a name="powerapps"></a> 
