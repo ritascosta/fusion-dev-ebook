@@ -20,9 +20,9 @@ You'll also need an Azure subscription and a PowerApps subscription.
 - [Expose your Web API with Azure API Management](#apim)
 - [Build an interface for your Web API with Power Apps](#powerapps)
 
-## 🔵 Workshop Overview <a name="overview"></a>
+## ✅ Workshop Overview <a name="overview"></a>
 
-## Clone the sample code on your local computer <a name="repo"></a>
+## ✅ Clone the sample code on your local computer <a name="repo"></a>
 
 To view and edit the code in this project, use `git` to clone this project on your hard drive:
 
@@ -34,7 +34,7 @@ To view and edit the code in this project, use `git` to clone this project on yo
     cd fusion-dev-ebook
     ```
 
-## Set up an Azure SQL Database server <a name="sql"></a>
+## ✅ Set up an Azure SQL Database server <a name="sql"></a>
 
 The Web API requires three SQL databases:
 
@@ -72,7 +72,7 @@ You can set up these databases in Azure SQL Database by following these steps:
     sqlcmd -S <yourservername>.database.windows.net -U sqladmin -P Pa55w.rd -d SchedulesDB -i "./SQLScripts/SchedulesDB-setup.sql"
     ```
 
-## Configure the Web API <a name="api"></a>
+## ✅ Configure the Web API <a name="api"></a>
 
 You can either follow the steps in the guide to build the Web API, or you can use the completed version provided in this repository. To build and deploy the completed version, perform the following instructions:
 
@@ -134,6 +134,6 @@ If you find it more suitable, you can deploy your Web API as a Web App in Azure 
 
     Example: https://fieldapi.victorioushill-21a56854.canadacentral.azurecontainerapps.io/swagger
 
-## Expose your Web API through API Management <a name="apim"></a>
+## ✅ Expose your Web API through API Management <a name="apim"></a>
 
-## Build an interface for your Web API with Power Apps <a name="powerapps"></a> 
+## ✅ Build an interface for your Web API with Power Apps <a name="powerapps"></a> 
