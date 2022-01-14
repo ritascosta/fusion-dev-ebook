@@ -132,7 +132,7 @@ If you find it more suitable, you can deploy your Web API as a Web App in Azure 
       ```
 1. Access your Web API throught the Application URL followed by "/swagger" and test your connection the the SQL database.
 
-Example: https://fieldapi.victorioushill-21a56854.canadacentral.azurecontainerapps.io/swagger
+    Example: https://fieldapi.victorioushill-21a56854.canadacentral.azurecontainerapps.io/swagger
 
 ## Expose your Web API through API Management <a name="apim"></a>
 
