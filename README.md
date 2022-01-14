@@ -20,7 +20,7 @@ You'll also need an Azure subscription and a PowerApps subscription.
 - [Expose your Web API with Azure API Management](#apim)
 - [Build an interface for your Web API with Power Apps](#powerapps)
 
-## Workshop Overview <a name="overview"></a>
+## 🔵 Workshop Overview <a name="overview"></a>
 
 ## Clone the sample code on your local computer <a name="repo"></a>
 
