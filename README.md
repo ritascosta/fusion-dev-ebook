@@ -95,7 +95,7 @@ If you find it more suitable, you can deploy your Web API as a Web App in Azure 
     ```powershell
     docker ...
     ```
-1. Add you newly created container image to an **Azure Container Registry** (create new if you don't have one).
+1. Add your newly created container image to an **Azure Container Registry** (create new if you don't have one).
 
     ```powershell
     $ACR_NAME="aircond"
@@ -109,7 +109,6 @@ If you find it more suitable, you can deploy your Web API as a Web App in Azure 
     az monitor log-analytics workspace create --resource-group $RESOURCE_GROUP --workspace-name $LOG_ANALYTICS_WORKSPACE
 
     $LOG_ANALYTICS_WORKSPACE_CLIENT_ID=(az monitor log-analytics workspace show --query customerId -g $RESOURCE_GROUP -n $LOG_ANALYTICS_WORKSPACE --out tsv)
-
     $LOG_ANALYTICS_WORKSPACE_CLIENT_SECRET=(az monitor log-analytics workspace get-shared-keys --query primarySharedKey -g $RESOURCE_GROUP -n $LOG_ANALYTICS_WORKSPACE --out tsv)
 
     az containerapp env create `
