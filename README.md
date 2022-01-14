@@ -86,7 +86,7 @@ You can either follow the steps in the guide to build the Web API, or you can us
 1. Open **appsettings.json**. There are three connections strings in the file. In each connection string, replace **fieldengineersqlserver** with the name of the SQL server you created above. Replace the password in each connection string with **Pa55w.rd**
 1. Open **appsettings.Development.json**. In each connection string, replace **fieldengineersqlserver** with the name of the SQL server you created above, and provide the password **Pa55w.rd**.
 
-### Deploy the Web API in the Azure Container Apps Service 
+### Deploy the Web API into Azure Container Apps Service 
 
 If you find it more suitable, you can deploy your Web API as a Web App in Azure App Service. In this case we will deploy it as a container to Azure Containers Apps. 
 
