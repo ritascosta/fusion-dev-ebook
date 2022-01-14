@@ -92,12 +92,12 @@ If you find it more suitable, you can deploy your Web API as a Web App in Azure 
 
 1. Containerize your application using the **Dockerfile** in the Web API folder
 
-```powershell
+    ```powershell
     docker ...
     ```
 1. Add you newly created container image to an **Azure Container Registry** (create new if you don't have one).
 
-```powershell
+    ```powershell
     $ACR_NAME="aircond"
     az acr login --name $ACR_NAME
     docker tag fieldapi $ACR_NAME/fieldapi:v1
@@ -105,32 +105,32 @@ If you find it more suitable, you can deploy your Web API as a Web App in Azure 
     ```    
 1. Create a **Container Apps Environment** to host your Container App.
 
-```powershell
-az monitor log-analytics workspace create --resource-group $RESOURCE_GROUP --workspace-name $LOG_ANALYTICS_WORKSPACE
+    ```powershell
+    az monitor log-analytics workspace create --resource-group $RESOURCE_GROUP --workspace-name $LOG_ANALYTICS_WORKSPACE
 
-$LOG_ANALYTICS_WORKSPACE_CLIENT_ID=(az monitor log-analytics workspace show --query customerId -g $RESOURCE_GROUP -n $LOG_ANALYTICS_WORKSPACE --out tsv)
+    $LOG_ANALYTICS_WORKSPACE_CLIENT_ID=(az monitor log-analytics workspace show --query customerId -g $RESOURCE_GROUP -n $LOG_ANALYTICS_WORKSPACE --out tsv)
 
-$LOG_ANALYTICS_WORKSPACE_CLIENT_SECRET=(az monitor log-analytics workspace get-shared-keys --query primarySharedKey -g $RESOURCE_GROUP -n $LOG_ANALYTICS_WORKSPACE --out tsv)
+    $LOG_ANALYTICS_WORKSPACE_CLIENT_SECRET=(az monitor log-analytics workspace get-shared-keys --query primarySharedKey -g $RESOURCE_GROUP -n $LOG_ANALYTICS_WORKSPACE --out tsv)
 
-az containerapp env create `
-  --name $CONTAINERAPPS_ENVIRONMENT `
-  --resource-group $RESOURCE_GROUP `
-  --logs-workspace-id $LOG_ANALYTICS_WORKSPACE_CLIENT_ID `
-  --logs-workspace-key $LOG_ANALYTICS_WORKSPACE_CLIENT_SECRET `
-  --location "$LOCATION"
+    az containerapp env create `
+      --name $CONTAINERAPPS_ENVIRONMENT `
+      --resource-group $RESOURCE_GROUP `
+      --logs-workspace-id $LOG_ANALYTICS_WORKSPACE_CLIENT_ID `
+      --logs-workspace-key $LOG_ANALYTICS_WORKSPACE_CLIENT_SECRET `
+      --location "$LOCATION"
     ```   
 1. Deploy your Docker image as a Container App in your recently created Container App Environment
 
-```powershell
-az containerapp create `
-  --name my-container-app-fieldapi `
-  --resource-group $RESOURCE_GROUP `
-  --environment $CONTAINERAPPS_ENVIRONMENT `
-  --image aircond.azurecr.io/fieldapi:v1 `
-  --target-port 80 `
-  --ingress 'external' `
-  --query configuration.ingress.fqdn
-  ```
+    ```powershell
+    az containerapp create `
+      --name my-container-app-fieldapi `
+      --resource-group $RESOURCE_GROUP `
+      --environment $CONTAINERAPPS_ENVIRONMENT `
+      --image aircond.azurecr.io/fieldapi:v1 `
+      --target-port 80 `
+      --ingress 'external' `
+      --query configuration.ingress.fqdn
+      ```
 
 ## Expose your Web API through API Management <a name="apim"></a>
 
