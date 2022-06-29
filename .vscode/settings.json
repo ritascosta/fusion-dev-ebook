@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/da963e3e-3dcc-4804-a491-f72685adc2ca/microsoft.web/sites/subscriptions/da963e3e-3dcc-4804-a491-f72685adc2ca/resourceGroups/fusion-demos/providers/Microsoft.Web/sites/VanArsdelAPI",
+    "appService.deploySubpath": "WebAPI"
+}

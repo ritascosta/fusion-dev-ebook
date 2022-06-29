@@ -3,3 +3,8 @@
 /WebAPI/bin
 #Ignore Entity Framework migrations
 /WebAPI/Migrations
+/WebAPI/Properties/PublishProfiles/*
+#Ignore VS files
+/WebAPI/.vscode
+/WebAPI/.vs
+.vscode/*
